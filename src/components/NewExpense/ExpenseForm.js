@@ -45,10 +45,12 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
-    //mathiko le state variable ma point garxa
+     //mathiko le state variable ma point garxa
+    
+    
 
 props.onSaveExpenseData(expenseData);
     setEnteredTitle(" "); //clear garna use hunxa form
